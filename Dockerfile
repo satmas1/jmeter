@@ -29,6 +29,10 @@ RUN   mkdir /jmeter \
     #   && tar -xzf apache-jmeter-$JMETER_VERSION.tgz \
     #   && rm apache-jmeter-$JMETER_VERSION.tgz
 # COPY apache-jmeter-5.3.tgz /jmeter
+
+COPY /ServerAgent-2.2.3/ /jmeter/ServerAgent-2.2.3/
+
+
 # RUN cd /jmeter/ \
 #     && tar -xzf apache-jmeter-5.3.tgz \
 #     && rm apache-jmeter-$JMETER_VERSION.tgz
